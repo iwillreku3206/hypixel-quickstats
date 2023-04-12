@@ -14,7 +14,7 @@ export default function SkywarsPage() {
 			<button className="w-full bg-neutral-800 font-mc p-2" onClick={reset}>
 				Reset
 			</button>
-			<div className="overflow-y-scroll flex flex-col gap-4" style={{ maxHeight: '80vh' }}>
+			<div className="overflow-y-scroll flex flex-col gap-4" style={{ height: '50vh' }}>
 				{players.map((player, index) => {
 					return <PlayerCard username={player} key={index} />
 				})}

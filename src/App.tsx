@@ -30,7 +30,7 @@ function App() {
 	const router = createBrowserRouter(routes)
 	const queryClient = new QueryClient()
 	return (
-		<main>
+		<main className="h-screen">
 			<QueryClientProvider client={queryClient}>
 				<RouterProvider router={router} />
 			</QueryClientProvider>
