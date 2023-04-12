@@ -3,6 +3,7 @@ import { createBrowserRouter, RouteObject, RouterProvider } from 'react-router-d
 import HomePage from './pages/home'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import BedWarsPage from './pages/bedwars'
+import SkywarsPage from './pages/skywars'
 
 export const routes: RouteObject[] = [
 	{
@@ -16,6 +17,10 @@ export const routes: RouteObject[] = [
 			{
 				path: '/bedwars',
 				element: <BedWarsPage />
+			},
+			{
+				path: '/skywars',
+				element: <SkywarsPage />
 			}
 		]
 	}

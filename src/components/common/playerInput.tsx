@@ -2,10 +2,11 @@ import { useState } from 'react'
 
 interface Props {
 	addPlayer: (username: string) => void
+	resetList?: () => void
 }
 
-export default function PLayerInput(props: Props) {
-	const { addPlayer } = props
+export default function PlayerInput(props: Props) {
+	const { addPlayer, resetList } = props
 
 	const [text, setText] = useState('')
 
@@ -41,6 +42,7 @@ export default function PLayerInput(props: Props) {
 				break
 			case 'Escape':
 				handleReset()
+				resetList && resetList()
 				break
 		}
 	}
